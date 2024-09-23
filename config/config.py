@@ -52,7 +52,7 @@ EXTRA_PLUGINS = getenv(
 
 EXTRA_PLUGINS_REPO = getenv(
     "EXTRA_PLUGINS_REPO",
-    "https://github.com/TheTeamVivek/Extra-Plugin",
+    "https://t.me/MissHarleySupport",
 )
 # Fill here the external plugins repo where plugins that you want to load
 
@@ -78,14 +78,14 @@ MUTE_WARNING_TIME = int(getenv("MUTE_WARNING_TIME", 100))
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "6815918609").split())
+    map(int, getenv("OWNER_ID", "").split())
 )  # Input type must be interger
 
 
 # make your bots privacy from telegra.ph and put your url here
 
 PRIVACY_LINK = getenv(
-    "PRIVACY_LINK", "https://telegra.ph/Privacy-Policy-for-YukkiMusic-08-30"
+    "PRIVACY_LINK", "https://t.me/MissHarleySupport"
 )
 
 
