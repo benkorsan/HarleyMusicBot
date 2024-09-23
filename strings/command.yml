@@ -12,45 +12,45 @@
 
 # Bot Commands
 PING_COMMAND : ["ping"]
-START_COMMAND : ["start"]
+START_COMMAND : ["baslat"]
 HELP_COMMAND : ["help"]
 SETTINGS_COMMAND : ["settings", "setting"]
 RELOAD_COMMAND : ["admincache", "reload"]
 GSTATS_COMMAND : ["gstats"]
 STATS_COMMAND : ["stats"]
-LANGUAGE_COMMAND : ["lang", "language", "langs"]
+LANGUAGE_COMMAND : ["lang", "dil", "language", "langs"]
 
 # Play Commands
-PLAY_COMMAND : ["play", "vplay", "cplay", "cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce"]
+PLAY_COMMAND : ["play", "oynat", "çal", "vplay", "cplay", "cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce"]
 PLAYMODE_COMMAND : ["playmode"]
 CHANNELPLAY_COMMAND : ["channelplay"]
-STREAM_COMMAND : ["stream", "cstream", "streamforce"]
+STREAM_COMMAND : ["stream", "canlı", "cstream", "streamforce"]
 
 #Playlists Command
 PLAYLIST_COMMAND : ["playlist"]
-DELETEPLAYLIST_COMMAND : ["deleteplaylist"]
-ADDPLAYLIST_COMMAND : ["addplaylist"]
+DELETEPLAYLIST_COMMAND : ["deleteplaylist", "sil"]
+ADDPLAYLIST_COMMAND : ["addplaylist", "ekle" ]
 
 
 # Tools
-QUEUE_COMMAND : ["queue","cqueue"]
-SONG_COMMAND : ["song", "video"]
-LYRICS_COMMAND : ["lyrics"]
+QUEUE_COMMAND : ["queue","cqueue", "sıra" ]
+SONG_COMMAND : ["song", "video", "muzik" ]
+LYRICS_COMMAND : ["lyrics", "söz" ]
 
 
 # Admin Commands
-AUTH_COMMAND : ["auth"]
-UNAUTH_COMMAND : ["unauth"]
-AUTHUSERS_COMMAND : ["authusers"]
-PAUSE_COMMAND : ["pause", "cpause"]
-RESUME_COMMAND : ["resume", "cresume"]
-MUTE_COMMAND : ["mute", "cmute"]
-UNMUTE_COMMAND : ["unmute", "cunmute"]
-STOP_COMMAND : ["stop", "end", "cstop", "cend"]
-SKIP_COMMAND : ["skip", "cskip"]
+AUTH_COMMAND : ["auth", "yetki" ]
+UNAUTH_COMMAND : ["unauth", "unyetki" ]
+AUTHUSERS_COMMAND : ["authusers", "yetkili" ]
+PAUSE_COMMAND : ["pause", "bekle", "cpause", "durakla", "dur" ]
+RESUME_COMMAND : ["resume", "cresume", "devam" ]
+MUTE_COMMAND : ["mute", "cmute", "sus", "sesiz" ]
+UNMUTE_COMMAND : ["unmute", "cunmute", "sesver"]
+STOP_COMMAND : ["stop", "end", "cstop", "bitir", "son", "cend"]
+SKIP_COMMAND : ["skip", "geç", "atla", "değiş", "cskip"]
 SHUFFLE_COMMAND : ["shuffle", "cshuffle"]
-LOOP_COMMAND : ["loop", "cloop"]
-SEEK_COMMAND : ["seek", "cseek", "seekback", "cseekback"]
+LOOP_COMMAND : ["loop","tekrar", "döngü", "cloop"]
+SEEK_COMMAND : ["seek", "geri", "cseek", "seekback", "cseekback"]
 REBOOT_COMMAND : ["reboot"]
 
 # Sudo Users Commaands
