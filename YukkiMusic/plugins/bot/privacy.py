@@ -6,18 +6,18 @@ import config
 from YukkiMusic import app
 
 TEXT = f"""
-🔒 **Privacy Policy for {app.mention} !**
+**{app.mention} için Gizlilik Politikası!**
 
-Your privacy is important to us. To learn more about how we collect, use, and protect your data, please review our Privacy Policy here: [Privacy Policy]({config.PRIVACY_LINK}).
+Gizliliğiniz bizim için önemlidir. Verilerinizi nasıl topladığımız, kullandığımız ve koruduğumuz hakkında daha fazla bilgi edinmek için lütfen Gizlilik Politikamızı buradan inceleyin: [Gizlilik Politikası]({config.PRIVACY_LINK}).
 
-If you have any questions or concerns, feel free to reach out to our [Support Team]({config.SUPPORT_GROUP}).
+Herhangi bir sorunuz veya endişeniz varsa, [Destek Ekibimize]({config.SUPPORT_GROUP}) ulaşmaktan çekinmeyin.
 """
 
 
 @app.on_message(filters.command("privacy"))
 async def privacy(client, message: Message):
     keyboard = InlineKeyboardMarkup(
-        [[InlineKeyboardButton("View Privacy Policy", url=config.PRIVACY_LINK)]]
+        [[InlineKeyboardButton("Gizlilik Politikasını Görüntüle", url=config.PRIVACY_LINK)]]
     )
     await message.reply_text(
         TEXT,
