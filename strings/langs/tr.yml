@@ -152,87 +152,83 @@ play_16: "🚫 Parça detaylarını almak başarısız oldu, belki bu parça You
 play_17: "🚫 Bu tür Spotify sorgularını çalamıyorum!\n\nYalnızca Spotify parçalarını, albümleri, sanatçıları ve çalma listelerini çalabilirim."
 play_18: "🚫 **Aktif Sesli Sohbet Yok**\n\nZorunlu oynatma için, aktif bir sesli sohbet bulunmalıdır."
 
-
-
-
-playlist_1: "**Kullanım:** /play [Müzik Adı veya YouTube Linki veya Sesinize Yanıt Verin]\n\nBot'un sunucusundaki çalma listesini çalmak istiyorsanız! Aşağıdaki düğmeye basın."
+# Çalma Listesi
+playlist_1: "**Kullanım:** /play [Müzik Adı veya YouTube Linki veya Sesinize Yanıt Verin]\n\nBot'un sunucusundaki çalma listesini çalmak için aşağıdaki düğmeye basın."
 playlist_2: "Çalma listeniz alınıyor... Lütfen bekleyin!"
-playlist_3: "Bot'un sunucusunda çalma listeniz yok."
+playlist_3: "Bot'un sunucusunda çalma listeniz bulunmuyor."
 playlist_4: "Alınan çalma listesi:\n\n"
-playlist_5: "Süre - {0} dk."
-playlist_6: "Çalma listelerinin silinmesi için PM'den benimle iletişime geçin."
-playlist_7: "Çalma listesindeki parçalar: {0}\n\nBir parçayı silmek için düğmelere basın.\n\nTüm çalma listesini silmek için: Tüm çalma listesini sil düğmesine basın."
-playlist_8: "Zaten mevcut\n\nBu parça çalma listenizde mevcut."
-playlist_9: "Üzgünüm! Bir çalma listesinde sadece {0} müzik bulunabilir."
-playlist_10: "Çalma listesi eklendi\n\n{0}\nÇalma listenize eklendi."
-playlist_11: "Parçanız başarıyla silindi."
-playlist_12: "Parçanızı silme işlemi başarısız oldu."
-playlist_13: "Tüm çalma listelerinizi sunucudan silindi."
+playlist_5: "Süre: **{0} dk.**"
+playlist_6: "Çalma listelerinizi silmek için PM'den benimle iletişime geçin."
+playlist_7: "Çalma listesindeki parçalar: **{0}**\n\nBir parçayı silmek için düğmelere basın.\n\nTüm çalma listesini silmek için: Tüm çalma listesini sil düğmesine basın."
+playlist_8: "🔁 Zaten mevcut!\n\nBu parça çalma listenizde mevcut."
+playlist_9: "🚫 Üzgünüm! Bir çalma listesinde yalnızca **{0}** müzik bulunabilir."
+playlist_10: "✅ Çalma listesi eklendi:\n\n**{0}**\nÇalma listenize başarıyla eklendi."
+playlist_11: "🗑 Parçanız başarıyla silindi."
+playlist_12: "❌ Parçanızı silme işlemi başarısız oldu."
+playlist_13: "🗑 Tüm çalma listelerinizi sunucudan silindi."
 playlist_14: "**Tüm çalma listenizi silmek istediğinizden emin misiniz?**\n\nÇalma listenizi kaybedeceksiniz ve bu daha sonra geri alınamaz."
 playlist_15: "[Tüm çalma listesini kontrol et]({0})"
 playlist_16: "Sıralı çalma listesi:"
 playlist_17: "Sıralı Pozisyon -"
 playlist_18: "[Tüm sıralı çalma listesini kontrol et]({0})\n\nSon sıralı pozisyon: **{1}**"
-playlist_19: "Grubun bot'un sunucularında çalma listesi yok"
+playlist_19: "Grubun bot'un sunucularında çalma listesi yok."
 
-#Playmode
-playmode_1: "Oynatma modunu seçin [{0}] içinde hangi modu kullanmak istediğinizi."
-playmode_2: "Ayarlar değiştirildi ve {0} tarafından başarıyla kaydedildi."
+# Oynatma Modu
+playmode_1: "Oynatma modunu seçin [{0}] içinde hangi modu kullanmak istediğinizi belirtin."
+playmode_2: "✅ Ayarlar değiştirildi ve **{0}** tarafından başarıyla kaydedildi."
 
-#Stream 
+# Akış
 str_1: "Lütfen m3u8 linkleri veya indeks linkleri sağlayın."
-str_2: "Geçerli akış doğrulandı\n\nLütfen bağlantıyı işliyorum..."
-str_3: "YouTube canlı akışlarını akışa alma yeteneğim yok. Canlı format bulunamadı."
+str_2: "✅ Geçerli akış doğrulandı!\n\nLütfen bağlantıyı işliyorum..."
+str_3: "🚫 YouTube canlı akışlarını akışa alma yeteneğim yok. Canlı format bulunamadı."
 
-#TopPlay
-tracks_1: "**İşleniyor {0} Top 10 Çalma Listesi**\n\n**Talep Eden:** {1}\n\nTop 10 parçaları kontrol etmek için /gstats komutunu kullanın"
-tracks_2: "**Hata**\n\nBot'un sunucularında **{0} Top 10 Çalma Listesi** bulunmuyor. Lütfen başka bir çalma listesi deneyin."
+# En İyi Oynatılanlar
+tracks_1: "**İşleniyor... {0} Top 10 Çalma Listesi**\n\n**Talep Eden:** {1}\n\nTop 10 parçaları kontrol etmek için /gstats komutunu kullanın."
+tracks_2: "❌ **Hata:**\n\nBot'un sunucularında **{0} Top 10 Çalma Listesi** bulunmuyor. Lütfen başka bir çalma listesi deneyin."
 
-# TOOLS
+# Araçlar
 
-#Lyrics
+# Şarkı Sözleri
 lyrics_1: "**Kullanım:**\n\n/lyrics [Müzik Adı]"
-lyrics_2: "Şarkı sözleri aranıyor..."
-lyrics_3: "Şarkı sözlerini getirme başarısız oldu 🥲.\n\n**Aranan:** {0}"
-lyrics_4: "Aşağıdaki düğmeye tıklayın ve şarkı sözlerini almak için arama yapın, uzun spam türlerinden kaçının."
+lyrics_2: "📜 Şarkı sözleri aranıyor..."
+lyrics_3: "❌ Şarkı sözlerini getirme başarısız oldu.\n\n**Aranan:** {0}"
+lyrics_4: "🔍 Aşağıdaki düğmeye tıklayın ve şarkı sözlerini almak için arama yapın, uzun spam türlerinden kaçının."
 
+# Ping
+ping_1: "» {0} ᴘɪɴɢ ɪɴɢ..."
+ping_2: "**» ᴘᴏɴɢ:** `{0}` ms\n\n<b><u>{1} sʏsᴛᴇᴍ sᴛᴀᴛ's :</u></b>\n\n🌋 ᴜᴩᴛɪᴍᴇ: {2}\n🌋 ʀᴀᴍ: {3}\n🌋 ᴄᴩᴜ: {4}\n🌋 ᴅɪsᴋ: {5}\n🌋 ᴩʏ-ᴛɢᴄᴀʟʟs: `{6} ms`"
 
+# Şarkı
+song_1: "🔒 Müzik veya video yalnızca özel sohbetlerde YouTube'dan indirilebilir. Lütfen özel bir sohbet başlatın."
+song_2: "**Kullanım:**\n\n/song [Müzik Adı] veya [YouTube Linki]"
+song_3: "🚫 Canlı bağlantı tespit edildi. Canlı YouTube videolarını indiremiyorum."
+song_4: "**Başlık:** {0}\n\nİndirmek istediğiniz türü seçin."
+song_5: "🚫 Geçerli bir YouTube bağlantısı değil."
+song_6: "🔄 Formatlar alınıyor... Lütfen bekleyin..."
+song_7: "❌ Video için mevcut formatları alma başarısız oldu. Lütfen başka bir parça deneyin."
+song_8: "⏳ İndirme başladı... Lütfen birkaç saniye bekleyin..."
+song_9: "❌ Şarkıyı YouTube'dan indirme başarısız oldu.\n\n**Neden:** {0}"
+song_10: "🚫 Telegram sunucularına yükleme başarısız oldu."
+song_11: "⏳ Yükleme başladı... Lütfen bekleyin..."
 
-#Ping
-ping_1 : "»{0} ᴘɪɴɢ ɪɴɢ..."
-ping_2 : "**» ᴘᴏɴɢ**: `{0}`ᴍs \n\n<b><u>{1} sʏsᴛᴇᴍ sᴛᴀᴛ's :</u></b>\n\n🌋 ᴜᴩᴛɪᴍᴇ : {2}\n🌋 ʀᴀᴍ : {3} \n🌋 ᴄᴩᴜ : {4} \n🌋 ᴅɪsᴋ : {5} \n🌋 ᴩʏ-ᴛɢᴄᴀʟʟs : `{6} ᴍs`"
+# Araçlar - Kuyruk
+queue_1: "⏳ Lütfen bekleyin..."
+queue_2: "🚫 Sıra listesi boş. Hiçbir parça bulunamadı."
+queue_3: "<u>**Sıralı Parçalar:</u>** [Daha Fazla Sıralı Parçayı Buradan Kontrol Edin]({0})"
+queue_4: "**💫 Sıraya Eklendi #{0}**\n\n**🥀Başlık:** {1}\n**⏱ Süre:** {2}\n**🥀Ekleyen:** {3} ❄️"
+queue_5: "🚫 Sıralamada yalnızca bir parça var, sıralamayı kontrol etmek için bazı parçalar ekleyin."
 
-# Song
-song_1 : "Müzik veya video yalnızca özel sohbetlerde YouTube'dan indirilebilir. Lütfen özel bir sohbet başlatın."
-song_2 : "**Kullanım:**\n\n/song [Müzik Adı] veya [YouTube Linki]"
-song_3 : "Canlı bağlantı tespit edildi. Canlı YouTube videolarını indiremiyorum."
-song_4 : "**Başlık**:- {0}\n\nİndirmek istediğiniz türü seçin."
-song_5 : "Geçerli bir YouTube bağlantısı değil."
-song_6 : "Formatlar alınıyor...\n\nLütfen bekleyin..."
-song_7 : "Video için mevcut formatları alma başarısız oldu. Lütfen başka bir parça deneyin."
-song_8 : "İndirme başladı\n\nLütfen birkaç saniye bekleyin..."
-song_9 : "Şarkıyı YouTube'dan indirme başarısız oldu\n\n**Neden:** {0}"
-song_10 : "Telegram sunucularına yükleme başarısız oldu."
-song_11 : "Yükleme başladı\n\nLütfen bekleyin..."
+# Tüm Akış Satırları
+stream_1: "**✮ Akış Başladı**\n\n**✯ Başlık:** [{0}]({1})\n**✬ Süre:** {2} dakika\n**✭ Boyut:** {3}"
+stream_2: "➲ **Akış Başladı |**\n\n**‣ Akış Türü:** Canlı akış [URL]\n**‣ Ekleyen:** {0}"
 
-# Tools - Queue
-queue_1 : "» Lütfen bekleyin..."
-queue_2 : "Sıra listesi boş. Hiçbir parça bulunamadı."
-queue_3 : "<u>**Sıralı Parçalar:</u>**  [Daha Fazla Sıralı Parçayı Buradan Kontrol Edin]({0})"
-queue_4 : "**💫 Sıraya Eklendi #{0}**\n\n**🥀Başlık :** {1}\n**⏱ Süre :** {2}\n **🥀Ekleyen :** {3} ❄️"
-queue_5 : "Sıralamada yalnızca bir parça var, sıralamayı kontrol etmek için bazı parçalar ekleyin."
+# Video Çağrısı
+V_C_1: "Katılımcı listesi getiriliyor...."
+V_C_2: "**İsim:** {0}\n   **ID:** {1}\n    **Kullanıcı Adı:** {2}\n    **Video Paylaşımı:** {3}\n    **Ekran Paylaşımı:** {4}\n    **El Kaldırdı:** {5}\n    **Sessize Alındı:** {6}\n     **Konuşuyor:** {7}\n    **Grupta Değil:** {8}"
+V_C_3: "🔊 Sesli sohbette katılımcı yok."
+V_C_4: "[Sesli sohbet katılımcılarının tüm ayrıntılarını buradan kontrol edebilirsiniz]({0})"
+V_C_5: "🚫 Bu sohbette aktif bir çağrı yok."
 
-# All Streaming Lines
-stream_1 : "**✮ Akış Başladı**\n\n**✯ Başlık :** [{0}]({1})\n**✬ Süre :** {2} dakika\n✭ Boyut :** {3}"
-stream_2 : "➲ **Akış Başladı |**\n\n**‣ Akış Türü :** Canlı akış [URL]\n**‣ Ekleyen :** {0}"
-
-V_C_1 : "Katılımcı listesi getiriliyor...."
-V_C_2 : "**İsim: {0}**\n   ID: {1}\n    **Kullanıcı Adı:** {2}\n    **Video Paylaşımı:** {3}\n    **Ekran Paylaşımı:** {4}\n    **El Kaldırdı:** {5}\n    **Sessize Alındı:** {6}\n     **Konuşuyor:** {7}\n    **Grupta Değil:** {8}"
-V_C_3 : "Sesli sohbette katılımcı yok"
-V_C_4 : "[Sesli sohbet katılımcılarının tüm ayrıntılarını buradan kontrol edebilirsiniz]({0})"
-V_C_5 : "Bu sohbette aktif bir çağrı yok."
-
-# Inline Buttons
 
 #General Buttons
 CLOSE_BUTTON  : "KAPAT"
