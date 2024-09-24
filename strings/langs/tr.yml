@@ -133,7 +133,7 @@ cplay_4: "🚫 Kanal alınamadı.\n\nBot'unuzu kanalınıza eklediğinizden ve y
 cplay_5: "🚫 Yalnızca kanallar desteklenir."
 cplay_6: "🚫 {0} kanalının **SAHİBİ** olmanız gerekiyor, bu gruba bağlanmak için.\n**Kanalın Sahibi:** @{1}\n\nAlternatif olarak, grubunuzu bu kanala bağlayabilir ve ardından `/channelplay linked` komutuyla bağlanmayı deneyebilirsiniz."
 
-play_1: "**⏳ İşleniyor...**"
+play_1: "👣"
 play_2: "🏷 **Kanal Oynatma Modu**\n🔄 Sorgu işleniyor... Lütfen bekleyin!\n\n**Bağlantılı Kanal:** {0}"
 play_3: "🚫 Sorguyu işleme koyulamadı!"
 play_4: "🚫 **Yalnızca Yöneticiler Oynatabilir**\nYalnızca yöneticiler ve yetkili kullanıcılar bu grupta müzik çalabilir.\n\nModu değiştirmek için /playmode komutunu kullanın ve zaten yöneticiyseniz, /admincache veya /reload komutlarıyla admin önbelleğini yenileyin."
@@ -212,10 +212,10 @@ song_10: "🚫 Telegram sunucularına yükleme başarısız oldu."
 song_11: "⏳ Yükleme başladı... Lütfen bekleyin..."
 
 # Araçlar - Kuyruk
-queue_1: "⏳ Lütfen bekleyin..."
+queue_1: "👣"
 queue_2: "🚫 Sıra listesi boş. Hiçbir parça bulunamadı."
 queue_3: "<u>**Sıralı Parçalar:</u>** [Daha Fazla Sıralı Parçayı Buradan Kontrol Edin]({0})"
-queue_4: "**💫 Sıraya Eklendi #{0}**\n\n**🥀Başlık:** {1}\n**⏱ Süre:** {2}\n**🥀Ekleyen:** {3} ❄️"
+queue_4: "**💫 Sıraya Eklendi #{0}**\n\n**👀Başlık:** {1}\n**⏱ Süre:** {2}\n**🥀Ekleyen:** {3} ❄️"
 queue_5: "🚫 Sıralamada yalnızca bir parça var, sıralamayı kontrol etmek için bazı parçalar ekleyin."
 
 # Tüm Akış Satırları
