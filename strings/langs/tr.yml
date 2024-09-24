@@ -155,7 +155,6 @@ play_18: "🚫 **Aktif Sesli Sohbet Yok**\n\nZorunlu oynatma için, aktif bir se
 
 
 
-
 playlist_1: "**Kullanım:** /play [Müzik Adı veya YouTube Linki veya Sesinize Yanıt Verin]\n\nBot'un sunucusundaki çalma listesini çalmak istiyorsanız! Aşağıdaki düğmeye basın."
 playlist_2: "Çalma listeniz alınıyor... Lütfen bekleyin!"
 playlist_3: "Bot'un sunucusunda çalma listeniz yok."
@@ -238,7 +237,7 @@ V_C_5 : "Bu sohbette aktif bir çağrı yok."
 #General Buttons
 CLOSE_BUTTON  : "KAPAT"
 CLOSEMENU_BUTTON  : "KAPAT"
-BACK_BUTTON : "GERİ"
+BACK_BUTTON : "GERİ🚶"
 UNBAN_BUTTON : "YASAKLAMAYI KALDIR"
 
 #Lyrics
