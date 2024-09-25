@@ -215,12 +215,12 @@ song_11: "⏳ Yükleme başladı... Lütfen bekleyin..."
 queue_1: "👣"
 queue_2: "🚫 Sıra listesi boş. Hiçbir parça bulunamadı."
 queue_3: "<u>**Sıralı Parçalar:</u>** [Daha Fazla Sıralı Parçayı Buradan Kontrol Edin]({0})"
-queue_4: "**💫 Sıraya Eklendi #{0}**\n\n**👀Başlık:** {1}\n**⏱ Süre:** {2}\n**🥀Ekleyen:** {3} ❄️"
+queue_4: "**💫 𝕊ı𝕣𝕒𝕪𝕒 𝔼𝕜𝕝𝕖𝕟𝕕𝕚 #{0}**\n\n**🥀𝔹𝕒ş𝕝ı𝕜:** {1}\n**⏱ ₛüᵣₑ:** {2}\n**𝔼𝕜𝕝𝕖𝕪𝕖𝕟:(っ◔◡◔)っ** {3} ❄️"
 queue_5: "🚫 Sıralamada yalnızca bir parça var, sıralamayı kontrol etmek için bazı parçalar ekleyin."
 
 # Tüm Akış Satırları
-stream_1: "**✮ Akış Başladı**\n\n**✯ Başlık:** [{0}]({1})\n**✬ Süre:** {2} dakika\n**✭ Boyut:** {3}"
-stream_2: "➲ **Akış Başladı |**\n\n**‣ Akış Türü:** Canlı akış [URL]\n**‣ Ekleyen:** {0}"
+stream_1: "**✮ ₐₖış Bₐşₗₐdı**\n\n**✯ 𝕭𝖆ş𝖑ı𝖐:** [{0}]({1})\n**✬ Süre:** {2} dakika\n**✭ Boyut:** {3}"
+stream_2: "➲ **ₐₖış Bₐşₗₐdı |**\n\n**‣ Akış Türü:** Canlı akış [URL]\n**‣ 𝔼𝕜𝕝𝕖𝕪𝕖𝕟:(っ◔◡◔)っ:** {0}"
 
 # Video Çağrısı
 V_C_1: "Katılımcı listesi getiriliyor...."
