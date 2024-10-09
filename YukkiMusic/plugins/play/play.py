@@ -35,13 +35,20 @@ from YukkiMusic.utils.logger import play_logs
 from YukkiMusic.utils.stream.stream import stream
 
 
+
+
+user_last_message_time = {}
+user_command_count = {}
+SPAM_WINDOW_SECONDS = 5  # Set the time window for spam checks (5 seconds for example)
+SPAM_THRESHOLD = 2
+
+
 @app.on_message(
     filters.command(
         [
             "play",
             "vplay",
             "cplay",
-            "cute",
             "cvplay",
             "playforce",
             "vplayforce",
@@ -55,19 +62,35 @@ from YukkiMusic.utils.stream.stream import stream
 )
 @PlayWrapper
 async def play_commnd(
-    client,
-    message: Message,
-    _,
-    chat_id,
-    video,
-    channel,
-    playmode,
-    url,
-    fplay,
+    client, message: Message, _, chat_id, video, channel, playmode, url, fplay
 ):
+    userbot = await get_assistant(message.chat.id)
+    userbot_id = userbot.id
+    user_id = message.from_user.id
+    current_time = time()
+    last_message_time = user_last_message_time.get(user_id, 0)
+
+    # Spam check logic
+    if current_time - last_message_time < SPAM_WINDOW_SECONDS:
+        user_last_message_time[user_id] = current_time
+        user_command_count[user_id] = user_command_count.get(user_id, 0) + 1
+        if user_command_count[user_id] > SPAM_THRESHOLD:
+            hu = await message.reply_text(
+                f"**{message.from_user.mention} ᴘʟᴇᴀsᴇ ᴅᴏɴ'ᴛ sᴘᴀᴍ, ᴛʀʏ ᴀɢᴀɪɴ ᴀғᴛᴇʀ 5 sᴇᴄᴏɴᴅs.**"
+            )
+            await asyncio.sleep(3)
+            await hu.delete()
+            return
+    else:
+        user_command_count[user_id] = 1
+        user_last_message_time[user_id] = current_time
+
+    # Proceed with adding the chat and sending response
+    await add_served_chat(message.chat.id)
     mystic = await message.reply_text(
         _["play_2"].format(channel) if channel else _["play_1"]
     )
+
     plist_id = None
     slider = None
     plist_type = None
@@ -274,7 +297,10 @@ async def play_commnd(
                 cap = _["play_13"].format(message.from_user.first_name)
                 img = url
             else:
-                return await mystic.edit_text(_["play_16"])
+                await mystic.delete()
+                return await play_commnd(
+                    client, message, _, chat_id, video, channel, playmode, url, fplay
+                )
         elif await Resso.valid(url):
             try:
                 details, track_id = await Resso.track(url)
@@ -314,10 +340,22 @@ async def play_commnd(
                 return await mystic.edit_text(err)
             return await mystic.delete()
         else:
-            if not await Telegram.is_streamable_url(url):
-                return await mystic.edit_tex(
+            if not await is_streamable_url(url):
+                return await mystic.edit_text(
                     "ᴏᴏᴘs ɪ ᴅᴏɴ'ᴛ Tʜɪɴᴋ ᴛʜᴀᴛ ɪᴛ ɪs ᴀ sᴛʀᴇᴀᴍᴀʙʟᴇ ᴜʀʟ"
                 )
+            try:
+                await Champu.stream_call(url)
+            except NoActiveGroupCall:
+                await mystic.edit_text(
+                    "ᴛʜᴇʀᴇ's ᴀɴ ᴇʀʀᴏʀ ɪɴ ᴛʜᴇ ʙᴏᴛ, ᴩʟᴇᴀsᴇ ʀᴇᴩᴏʀᴛ ɪᴛ ᴛᴏ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ ᴀs sᴏᴏɴ ᴀs ᴩᴏssɪʙʟᴇ."
+                )
+                return await app.send_message(
+                    config.LOG_GROUP_ID,
+                    "ᴩʟᴇᴀsᴇ ᴛᴜʀɴ ᴏɴ ᴠɪᴅᴇᴏᴄʜᴀᴛ ᴛᴏ sᴛʀᴇᴀᴍ ᴜʀʟ.",
+                )
+            except Exception as e:
+                return await mystic.edit_text(_["general_3"].format(type(e).__name__))
             await mystic.edit_text(_["str_2"])
             try:
                 await stream(
@@ -539,7 +577,7 @@ async def anonymous_check(client, CallbackQuery):
         return
 
 
-@app.on_callback_query(filters.regex("YukkiPlaylists") & ~BANNED_USERS)
+@app.on_callback_query(filters.regex("ChampuPlaylists") & ~BANNED_USERS)
 @languageCB
 async def play_playlists_command(client, CallbackQuery, _):
     callback_data = CallbackQuery.data.strip()
